@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/yura/CppProjects/EasyCNC'
+g++ -std=c++17 -Wall  -c  
+g++  -std=c++17 -Wall -o bin/program src/main.cpp `pkg-config gtk+-3.0 --cflags --libs` -export-dynamic  
+make: Leaving directory '/home/yura/CppProjects/EasyCNC'
+ 
+make: Circular src/main.cpp <- src/main.cpp dependency dropped.
+
